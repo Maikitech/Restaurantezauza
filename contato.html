@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('./IMG/IMG GALERIA/capa.JPG');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .fixed-button {
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            /* Z-index maior que o conteúdo principal para garantir que fique sobreposto */
+        }
+
+        .white-link {
+            color: white;
+            /* Outros estilos opcionais */
+            text-decoration: none;
+            /* Remove sublinhado, se necessário */
+        }
+
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: white;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            color: white;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+    </style>
+    
+</head>
+
+<body>
+    
+    <a href="index.html" class="btn btn-primary fixed-button">Início</a>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5">
+                    <h2 class="heading-section">Contato <br>Restaurante Zauza</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="wrapper">
+                        <div class="row mb-5">
+                            <div class="col-md-5">
+                                <div class="dbox w-100 text-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-map-marker"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p><h5><span>Endereço:</span><br> RS-324, Km 3, Nova Bassano - RS, 95340-000</p></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="dbox w-100 text-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-phone"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p><h5><span>Telefone:</span><br> <a href="tel://32731869" class="white-link">(54) 3273-1869</a><br><a href="tel://32731869" class="white-link">(54)99140-2428 </h5></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="dbox w-100 text-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-paper-plane"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p><h5><span>Email:</span><br> <a
+                                                href="/cdn-cgi/l/email-protection#dcb5b2bab39ca5b3a9aeafb5a8b9f2bfb3b1" class="white-link"><span
+                                                    class="__cf_email__"
+                                                    data-cfemail="b2dbdcd4ddf2cbddc7c0c1dbc6d79cd1dddf">letizauza@gmail.com</span></a>
+                                                </h5>                                        
+                                                </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="dbox w-100 text-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <span class="fa fa-globe"></span>
+                                    </div><!-- 
+                                     <div class="text"> 
+                                        <p><span>site</span> <a href="#">site.com</a></p>
+                                    </div>
+                                    -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-md-7">
+                                <div class="contact-wrap w-100 p-md-5 p-4">
+                                    <h3 class="mb-4"></h3>
+                                    <div id="form-message-warning" class="mb-4"></div>
+                                    <div id="form-message-success" class="mb-4">
+
+                                    </div>
+                                    <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="label" for="name">
+                                                        <p>Nome completo:</p>
+                                                    </label>
+                                                    <input type="text" class="form-control" name="name" id="name"
+                                                        placeholder="Nome">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="label" for="email">
+                                                        <p>Email:</p>
+                                                    </label>
+                                                    <input type="email" class="form-control" name="email" id="email"
+                                                        placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="label" for="subject">
+                                                        <p>Assunto:</p>
+                                                    </label>
+                                                    <input type="text" class="form-control" name="subject" id="subject"
+                                                        placeholder="Assunto">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="label" for="#">
+                                                        <p>Mensagem:
+                                                    </label>
+                                                    <textarea name="message" class="form-control" id="message" cols="30"
+                                                        rows="4" placeholder="Mensagem"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="submit" value="Enviar" class="btn btn-primary">
+                                                    <div class="submitting"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <body>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    <script>
+
+    </script>
+
+</html>
